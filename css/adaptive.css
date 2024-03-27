@@ -1,0 +1,618 @@
+/* 1174 - 1280 */
+@media screen and (max-width: 1280px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .order-image img {
+    min-width: 40%;
+  }
+
+  .properties-image img {
+    max-width: 100%;
+  }
+
+  .order-strawberry-a img {
+    left: 15px;
+  }
+}
+
+/* 990 - 1174 */
+@media screen and (max-width: 1174px) {
+  .main {
+    padding: 70px 0 50px 0;
+  }
+
+  .properties-image {
+    width: 450px;
+  }
+
+  .advantages-items .advantage {
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 10px;
+  }
+
+  .properties {
+    padding: 100px 0;
+  }
+
+  .products {
+    padding: 80px 0;
+  }
+
+  .container .products-items {
+    grid-row-gap: 136px;
+    justify-items: center;
+  }
+}
+
+/* 860 - 990 */
+@media screen and (max-width: 990px) {
+  .header .container {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .main-action {
+    margin-top: -35px;
+  }
+
+  .main .container {
+    display: block;
+  }
+
+  .main h1 {
+    width: 580px;
+  }
+
+  .main-image {
+    margin-top: -100px;
+    margin-left: 210px;
+  }
+
+  .container .products-items {
+    grid-template-columns: 175px 175px;
+    gap: 150px;
+  }
+
+  .order .container {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .order {
+    padding: 0 0 40px 0;
+    margin: 0 auto;
+  }
+
+  .order-info {
+    margin-left: -70px;
+    margin-right: -23px;
+  }
+
+  .order-info h2 {
+    margin-right: -8px;
+  }
+
+  .order-image {
+    width: 330px;
+  }
+
+  .order-image img {
+    margin-top: 275px;
+    margin-left: -44px;
+    max-width: 106.7%;
+  }
+
+  .order-strawberry-a img {
+    top: -4px;
+    left: 30px;
+  }
+
+  .order-strawberry-b img {
+    top: 237px;
+    right: 145px;
+  }
+}
+
+/* 768 - 860 */
+@media screen and (max-width: 860px) {
+  .header .container {
+    justify-content: unset;
+  }
+
+  .header .container span {
+    display: none;
+  }
+
+  .menu ul {
+    margin-left: 103px;
+  }
+
+  .menu-graph {
+    display: none;
+  }
+
+  .order-info {
+    padding: 100px 0 77px 0;
+  }
+
+  .order-strawberry-a img {
+    width: 72px;
+    top: 340px;
+    left: 415px;
+  }
+
+}
+
+
+/* 710 - 768 */
+@media screen and (max-width: 768px) {
+
+  .menu ul {
+    margin-right: 20px;
+  }
+
+  .main-image {
+    max-width: 250px;
+    margin-left: 157px;
+    transform: scale(1.0, 1.0);
+  }
+
+  .main-image::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 35%;
+    border-radius: 50%;
+    border: 1px solid rgba(130, 19, 40, 0.5);
+    z-index: -1;
+    animation: pulse 2.5s infinite ease-out;
+    top: 31%;
+    left: 90%;
+  }
+
+  .main-image::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 35%;
+    border-radius: 50%;
+    border: 1px solid rgba(130, 19, 40, 0.5);
+    z-index: -1;
+    animation: pulse 2.5s infinite ease-out;
+    top: 31%;
+    left: 90%;
+    animation-delay: 0.5s;
+  }
+
+  .properties {
+    background-color: #ffefef;
+  }
+
+  .properties .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .properties-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .properties-text {
+    max-width: 672px;
+  }
+
+  .properties-image {
+    width: 302px;
+    margin-top: 60px;
+  }
+
+  .advantages-items {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 220px 220px;
+    grid-column-gap: 50px;
+    grid-row-gap: 80px;
+  }
+
+  .advantage-number span {
+    padding: 13px 0 0 2px;
+  }
+
+  .products {
+    padding: 100px 0 0 0;
+  }
+
+  .container .products-items {
+    padding: 80px 0 100px 0;
+    /*grid-template-columns: 175px 175px;*/
+    /*gap: 150px;*/
+    grid-template-columns: 253px 253px;
+    grid-column-gap: 29px;
+    grid-row-gap: 136px;
+  }
+
+  .products-title {
+    font-size: 45px;
+    margin-bottom: 42px;
+  }
+
+  .order-strawberry-a img {
+    left: 340px;
+  }
+}
+
+/* 650 - 710 */
+@media screen and (max-width: 710px) {
+  .main-image {
+    max-width: 250px;
+    margin-left: 122px;
+    transform: scale(0.8, 0.8);
+  }
+}
+
+/* 600 - 650 */
+@media screen and (max-width: 650px) {
+  .menu ul {
+    margin-left: 60px;
+  }
+
+  .order {
+    padding: 0;
+  }
+
+  .order .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order-text {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.437;
+    padding-bottom: 88px;
+  }
+
+  .order-info {
+    margin-left: -22px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .order-info h2 {
+    font-size: 30px;
+  }
+
+  .order-contacts-text {
+    margin-top: 40px;
+  }
+
+  .order-image {
+    display: none;
+  }
+
+  .order-contacts .btn {
+    display: block;
+    width: 100%;
+  }
+
+  .order-input {
+    display: block;
+    width: 100%;
+  }
+
+  .order-strawberry-a img {
+    left: 390px;
+    top: 245px;
+  }
+
+  .order-strawberry-b img {
+    display: none;
+  }
+}
+
+
+/* 520 - 600 */
+@media screen and (max-width: 600px) {
+  .menu ul {
+    margin-left: 25px;
+  }
+
+  .main {
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main h1 {
+    font-size: 32px;
+    line-height: 1.25;
+    width: 338px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .main-action,
+  .main-text {
+    text-align: center;
+  }
+
+  .main-action .btn {
+    margin-bottom: 0;
+  }
+
+  .main-image {
+    /*max-width: 250px;*/
+    margin-top: -50px;
+    margin-left: -40px;
+    transform: scale(0.6, 0.6);
+  }
+
+  .container .products-items {
+    grid-template-columns: 263px;
+    padding: 80px 0 100px 0;
+  }
+
+  .footer-gift-square {
+    display: none;
+  }
+
+  .footer {
+    padding: 50px 0;
+  }
+
+  .footer .logo {
+    order: 1;
+  }
+
+  .footer-phone {
+    order: 2;
+  }
+
+  .footer-instargam {
+    order: 3;
+    padding-bottom: 40px;
+  }
+
+  .footer-rights {
+    position: initial;
+    order: 4;
+    margin: 0;
+  }
+
+  .footer-phone {
+    padding: 40px 0;
+  }
+
+  .footer .container {
+    flex-direction: column;
+  }
+
+  .footer-logo-rights {
+    text-align: center;
+  }
+
+}
+
+
+/* 490 - 520 */
+@media screen and (max-width: 520px) {
+  .order-strawberry-a img {
+    left: 370px;
+  }
+}
+
+/* 360 - 490 */
+@media screen and (max-width: 490px) {
+
+  .header .container span {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .header .container {
+    display: flex;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-title {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+
+  .menu-graph {
+    display: block;
+    margin-left: 191px;
+  }
+
+  .menu-graph svg {
+    width: 40px;
+    /*position: absolute;*/
+    top: 15px;
+  }
+
+  .menu.open {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(211, 204, 204, 0.71);
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    justify-content: center;
+  }
+
+  .close {
+    display: block;
+    width: 20px;
+    /*  height: 24px;*/
+    /*  fill: rgb(164, 107, 0);*/
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .main-text {
+    font-size: 16px;
+    line-height: 1.438;
+    margin-top: -12px;
+  }
+
+  .main-action {
+    margin-top: -50px;
+  }
+
+  .main-image {
+    bottom: -18px;
+    margin-left: 0;
+  }
+
+  .main-image img {
+    max-width: 417px;
+  }
+
+  .main-image::before {
+    height: 44%;
+    left: 50%;
+  }
+
+  .main-image::after {
+    height: 44%;
+    left: 50%;
+  }
+
+  .properties {
+    padding-bottom: 60px;
+  }
+
+  .properties-title {
+    font-size: 30px;
+    line-height: 1.167;
+    /*margin-left: 37px;*/
+    width: 317px;
+  }
+
+  .properties-text {
+    max-width: 347px;
+    font-size: 16px;
+    line-height: 1.437;
+  }
+
+  .advantages {
+    padding-bottom: 92px;
+  }
+
+  .advantages-items {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 165px 165px;
+    grid-gap: 22px;
+  }
+
+  .advantage-title {
+    font-size: 18px;
+  }
+
+  .advantage-text {
+    width: 169px;
+    font-size: 13px;
+    line-height: 1.385;
+  }
+
+  .products-title {
+    font-size: 30px;
+  }
+
+  .products-name {
+    font-size: 18px;
+  }
+
+  .order-strawberry-a img {
+    top: 235px;
+    left: 280px;
+  }
+
+  .order-strawberry-b {
+    display: none;
+  }
+
+}
+
+
+/* 320 - 360 */
+@media screen and (max-width: 360px) {
+  .main {
+    padding-top: 30px;
+  }
+
+  .main h1 {
+    width: 317px;
+  }
+
+  .main-text {
+    width: 290px;
+  }
+
+  .menu-graph {
+    margin-left: 0;
+  }
+
+  .main-action .btn {
+    margin-right: 24px;
+  }
+
+  .main-image {
+    /*margin-left: -53px;*/
+  }
+
+  .properties {
+    padding-top: 40px;
+  }
+
+  .properties-title {
+    font-size: 27px;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .properties-text {
+    max-width: 275px;
+  }
+
+  .advantage-title {
+    font-size: 16px;
+  }
+
+  .advantages-items {
+    grid-gap: 0;
+  }
+
+  .advantage-text {
+    width: 117px;
+  }
+
+  .order-strawberry-a img {
+    left: 200px;
+  }
+}

@@ -1,0 +1,699 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: GilroyRegular;
+  src: url("../fonts/gilroy-regular.ttf");
+}
+
+@font-face {
+  font-family: GilroyMedium;
+  src: url("../fonts/gilroy-medium.ttf");
+}
+
+@font-face {
+  font-family: GilroyBold;
+  src: url("../fonts/gilroy-bold.ttf");
+}
+
+@font-face {
+  font-family: GilroyExtraBold;
+  src: url("../fonts/gilroy-extrabold.ttf");
+}
+
+@font-face {
+  font-family: Tavolga;
+  src: url("../fonts/TavolgaFree.ttf");
+}
+
+@font-face {
+  font-family: MyriadPro;
+  src: url("../fonts/MyriadPro-Regular.ttf");
+}
+
+.header {
+  font-family: GilroyMedium, sans-serif;
+  background-color: #eba8b1;
+  /* отступ снизу от черты до следующего блока = 24px */
+  padding: 36px 0 24px 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  /*justify-content: space-between;*/
+  /*gap: 103px;*/
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin-right: 96px;
+}
+
+.menu ul li {
+  padding-bottom: 3px;
+  border-bottom: 3px solid transparent;
+}
+
+.menu ul li:hover {
+  /*padding-bottom: 3px;*/
+  border-bottom: 2px solid rgb(130, 19, 40);
+}
+
+.menu-item a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: GilroyMedium, sans-serif;
+  font-weight: 700;
+  color: rgb(119, 11, 29);
+}
+
+.header span {
+  font-size: 16px;
+  font-family: GilroyBold, sans-serif;
+  color: rgb(255, 255, 255);
+}
+.menu-graph{
+  display: none;
+}
+
+/* Блок 1 Мягкие французские пироженки Macaroons */
+.main {
+  /* для всего блока main задаем отступы от самого большого элемента - картинки */
+  padding: 127px 0 108px 0;
+  background-color: #eba8b1;
+  /* прячем скрол */
+  overflow: hidden;
+}
+
+.main .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-info {
+  max-width: 580px;
+  position: relative;
+  z-index: 4;
+}
+
+.main h1 {
+  font-size: 55px;
+  font-family: Tavolga, sans-serif;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  line-height: 1.091;
+  /*margin-right: 12px;*/
+  margin-bottom: 60px;
+}
+
+.main-title {
+  z-index: 2;
+}
+
+.main-text {
+  font-size: 18px;
+  font-family: Tavolga, sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1.389;
+  max-width: 345px;
+  height: 67px;
+}
+
+.main-image {
+  max-width: 528px;
+  margin-right: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.main-image::before {
+  content: '';
+  position: absolute;
+  width: 30%;
+  height: 35%;
+  border-radius: 50%;
+  border: 1px solid rgba(130, 19, 40, 0.5);
+  z-index: -1;
+  animation: pulse 2.5s infinite ease-out;
+  top: 31%;
+  left: 37%;
+}
+
+.main-image::after {
+  content: '';
+  position: absolute;
+  width: 30%;
+  height: 35%;
+  border-radius: 50%;
+  border: 1px solid rgba(130, 19, 40, 0.5);
+  z-index: -1;
+  animation: pulse 2.5s infinite ease-out;
+  top: 31%;
+  left: 37%;
+  animation-delay: 0.5s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  /*35% {*/
+  /*  transform: scale(1.5);*/
+  /*  opacity: 1;*/
+  /*}*/
+  /*70% {*/
+  /*  opacity: 1;*/
+  /*}*/
+  /*90% {*/
+  /*  opacity: 0;*/
+  /*}*/
+  100% {
+    transform: scale(4.3);
+    opacity: 0;
+  }
+}
+
+.btn {
+  background-image: -moz-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+  background-image: -webkit-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+  background-image: -ms-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+  /*height: 60px;*/
+  font-family: GilroyBold, sans-serif;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 5px 9px 1px rgba(130, 19, 40, 0.5);
+}
+
+
+.main-action .btn {
+  font-size: 18px;
+  border-radius: 30px;
+  width: 240px;
+  margin-top: 86px;
+  padding: 21px;
+}
+
+/* Блок 2 Мы печём для вас вкуснейшие макаруны уже более 10 лет */
+.properties {
+  padding: 119px 0 88px 0;
+  background-color: #ffefef;
+}
+
+.properties .container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.properties-info {
+  /*max-width: 475px;*/
+}
+
+.properties-image {
+  display: flex;
+  max-width: 520px;
+}
+
+.properties-title {
+  font-size: 45px;
+  font-family: Tavolga, sans-serif;
+  font-weight: 400;
+  color: rgb(51, 25, 7);
+  line-height: 1.222;
+  margin-bottom: 40px;
+  max-width: 475px;
+}
+
+.properties-text {
+  font-size: 18px;
+  font-family: GilroyRegular, sans-serif;
+  color: rgb(51, 25, 7);
+  line-height: 1.556;
+  max-width: 397px;
+  /*height: 157px;*/
+}
+
+/* Блок 3 преимущества */
+.advantages {
+  background-color: #ffefef;
+  padding-bottom: 120px;
+  /* почему не срабатывает заданный цвет? т.к. margin является внешним отступом */
+  /*margin-bottom: 120px;*/
+}
+
+.advantages-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 86px;
+  justify-content: center;
+}
+
+.advantage-number {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 70px;
+  height: 70px;
+  background: #821328;
+  border-radius: 50%;
+  font-size: 60px;
+  font-family: GilroyExtraBold, sans-serif;
+  color: rgb(255, 255, 255);
+  margin-bottom: 13px;
+}
+
+.advantage:hover .advantage-number {
+  color: #821328;
+  background: rgba(199, 120, 132, 0.57);
+  transition-duration: 0.5s;
+}
+
+.advantage-number span {
+  display: inline-block;
+  padding: 13px 0 0 20px;
+}
+
+.advantage-title {
+  font-size: 20px;
+  font-family: GilroyExtraBold, sans-serif;
+  color: rgb(51, 25, 7);
+  margin-bottom: 19px;
+}
+
+.advantage-text {
+  font-size: 15px;
+  font-family: GilroyMedium, sans-serif;
+  color: rgb(51, 25, 7);
+  line-height: 1.333;
+  width: 219px;
+  /*height: 75px;*/
+}
+
+/* Блок 4 Выберите свой макарун */
+.products {
+  padding: 120px 0;
+  background-color: #eba8b1;
+}
+
+.container .products-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(263px, 1fr));
+  grid-gap: 29px;
+  justify-content: center;
+}
+
+.products-title {
+  font-size: 45px;
+  font-family: Tavolga, sans-serif;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 143px;
+}
+
+.product-name {
+  font-size: 18px;
+  font-family: Tavolga, sans-serif;
+  color: rgb(255, 255, 255);
+  /* ! в макете отступ 48px */
+  margin-top: 104px;
+  margin-bottom: 26px;
+}
+
+
+.product-number,
+.product-price {
+  font-size: 15px;
+  font-family: GilroyRegular, sans-serif;
+  color: rgb(255, 255, 255);
+  /*line-height: 3.667;*/
+}
+
+.product {
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-radius: 20px;
+  width: 259px;
+  height: 225px;
+  display: inline-block;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+.product-action .btn {
+  font-size: 16px;
+  border-radius: 25px;
+  width: 130px;
+  height: 50px;
+  padding: 16px;
+  margin-left: 36px;
+}
+
+/* название тоже будет слегка увеличиваться */
+/*.product:hover .product-name,*/
+.product:hover .product-image {
+  transform: scale(1.1);
+  /*transition: all 0.5s ease;*/
+}
+
+.product-image {
+  position: absolute;
+  margin-top: -60px;
+  margin-left: 34px;
+  transition: all 0.5s ease;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  /*margin-left: 21px;*/
+  justify-content: center;
+}
+
+.product-nmb-prc {
+  text-align: left;
+}
+
+
+/* Блок 5 Закажите макарун! */
+.order {
+  background-color: #ffefef;
+  padding: 98px 0 120px 0;
+}
+
+.order .container {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.order-image {
+  margin-top: 60px;
+  max-width: 408px;
+}
+
+.order-info {
+  max-width: 406px;
+  margin-left: 161px;
+}
+
+.order-info h2 {
+  font-size: 45px;
+  font-family: Tavolga, sans-serif;
+  color: rgb(51, 25, 7);
+  font-weight: 400;
+  margin-bottom: 41px;
+  /*line-height: 1.222;*/
+}
+
+.order-text {
+  font-size: 18px;
+  font-family: GilroyRegular, sans-serif;
+  color: rgb(51, 25, 7);
+  line-height: 1.556;
+  width: 398px;
+  height: 45px;
+  padding-bottom: 48px;
+}
+
+.order-contacts span {
+  font-size: 18px;
+  font-family: GilroyBold, sans-serif;
+  color: rgb(18, 10, 6);
+}
+
+.order-contacts-text,
+.order-products-text {
+  font-size: 18px;
+  font-family: GilroyBold, sans-serif;
+  color: rgb(18, 10, 6);
+  margin-bottom: 22px;
+}
+
+.order-contacts-text {
+  /* 25 = 40 - 15 */
+  margin-top: 25px;
+}
+
+.order-input {
+  font-size: 15px;
+  font-family: GilroyBold, sans-serif;
+  color: rgb(118, 12, 34);
+  border-width: 1px;
+  border-color: rgb(130, 19, 40);
+  border-style: solid;
+  border-radius: 30px;
+  width: 293px;
+  /*height: 59px;*/
+  padding: 22px 25px 23px 25px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  background: transparent;
+  outline: none;
+}
+
+.order-input::placeholder {
+  font-size: 15px;
+  font-family: GilroyBold, sans-serif;
+  /* если текст placeholder сделать темнее, тогда вводимый текст тоже будет темным */
+  color: rgba(118, 12, 34, 0.58);
+  /*line-height: 5.333;*/
+}
+
+.order-contacts .btn {
+  font-size: 18px;
+  font-family: GilroyBold, sans-serif;
+  color: rgb(255, 255, 255);
+  padding: 22px;
+  /*line-height: 4.444;*/
+  border-radius: 30px;
+  border-color: rgb(130, 19, 40);
+  width: 295px;
+  height: 61px;
+  background-image: -moz-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+  background-image: -webkit-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+  background-image: -ms-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+}
+
+.order-strawberry-a {
+  width: 85px;
+  /*margin-left: 50px;*/
+}
+
+.order-strawberry-a img {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  animation: move-straw 3s infinite;
+}
+
+@keyframes move-straw {
+  0% {
+    transform: translateY(-10px);
+  }
+  /*17% {*/
+  /*  transform: translateY(-5px);*/
+  /*}*/
+  /*34% {*/
+  /*  transform: translateY(0px);*/
+  /*}*/
+  /*45% {*/
+  /*  transform: translateY(5px);*/
+  /*}*/
+  50% {
+    transform: translateY(10px);
+  }
+  /*65% {*/
+  /*  transform: translateY(5px);*/
+  /*}*/
+  /*75% {*/
+  /*  transform: translateY(0px);*/
+  /*}*/
+  /*87% {*/
+  /*  transform: translateY(-5px);*/
+  /*}*/
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.order-strawberry-b img {
+  position: absolute;
+  top: 455px;
+  right: 145px;
+  animation: move-straw 3s 0.5s infinite;
+}
+
+.footer {
+  padding: 73px 0 62px 0;
+  background-color: #c0707c;
+  position: relative;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo-rights {
+  font-size: 12px;
+  font-family: GilroyRegular, sans-serif;
+  color: rgb(227, 172, 180);
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.footer-rights {
+  font-size: 12px;
+  font-family: GilroyRegular, sans-serif;
+  color: rgb(227, 172, 180);
+  position: absolute;
+  margin-top: 56px;
+  margin-left: 0;
+}
+
+.footer-instargam {
+  font-size: 16px;
+  font-family: GilroyBold, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  cursor: pointer;
+}
+
+.footer-text-image {
+  margin-top: 15px;
+}
+
+.footer-phone {
+  font-size: 16px;
+  font-family: GilroyBold, sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.footer-gift-square {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: 107px;
+  bottom: 40px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.footer-gift {
+  /*display: none;*/
+  /*display: block;*/
+  border-width: 2px;
+  border-color: rgb(119, 10, 29);
+  border-style: solid;
+  border-radius: 10px;
+  background-color: rgb(254, 239, 238);
+  width: 168px;
+  /*height: 60px;*/
+  font-size: 15px;
+  font-family: GilroyMedium, sans-serif;
+  color: rgb(119, 10, 29);
+  /*line-height: 1.333;*/
+  padding: 15px 0 14px 10px;
+  letter-spacing: 0.7px;
+  margin-right: 0;
+  position: absolute;
+  right: 20px;
+  /*top: -60px;*/
+  bottom: -150px;
+  opacity: 0;
+  transition: 1s;
+}
+
+.footer-square {
+  /*display: none;*/
+  /*display: block;*/
+  margin-left: -7px;
+  width: 13px;
+  height: 13px;
+  /*border: 1px solid #3a0505;*/
+  border-left: none;
+  border-bottom: none;
+  rotate: 45deg;
+  background: rgb(254, 239, 238);
+  border-right: 2px solid rgb(119, 10, 29);
+  border-top: 2px solid rgb(119, 10, 29);
+  position: absolute;
+  right: -9px;
+  top: 25px;
+}
+
+.footer-gift-image {
+  position: absolute;
+  right: -91px;
+  border-radius: 50%;
+  background-color: #aa2c41;
+  width: 90px;
+  height: 90px;
+  margin-top: -60px;
+  background: radial-gradient(rgb(132 20 43), rgb(254 111 131));
+  /*background-image: -moz-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);*/
+  /*background-image: -webkit-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);*/
+  /*background-image: -ms-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);*/
+}
+
+.footer-gift-image:hover {
+  box-shadow: 0 0 12px 2.4px rgba(130, 19, 40, 0.5);
+}
+
+.footer-gift-image img {
+  margin-top: 20px;
+  margin-left: 18px;
+}
+
+/*.footer-gift-square:hover .footer-square,*/
+.footer-gift-square:hover .footer-gift {
+  /*display: block;*/
+  /*margin-top: -70px;*/
+  /*animation: ftr-gift 0.5s ease-in;*/
+  bottom: 0;
+  opacity: 1;
+}
+
+@keyframes ftr-gift {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menugraph {
+  display: none;
+}
+
+.close {
+  display: none;
+}
